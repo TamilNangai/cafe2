@@ -8,6 +8,9 @@ import a3 from '../assets/about/a3.png'
 import a4 from '../assets/about/a4.png'
 import bp from '../assets/about/bp.png'
 import line from '../assets/Contact/line.png'
+import beanl from "../assets/coffee/beanl.png";
+import beanr from "../assets/coffee/beanr.png";
+import tbean from "../assets/coffee/tbean.png";
 export default function About_page() {
 const aboutData = [
   {
@@ -18,8 +21,9 @@ const aboutData = [
     imagePosition: "right",
     imageline:line,
     paragraph:"paragraphtwo",
-    imageClass:"w-[592px] h-[642.78px] right-0 top-10",
-    textclass:"text-left md:ml[25%]"
+    imageClass:"w-auto lg:w-[592px] h-[495px] relative top-0right-0 z-40 ",
+    textclass:"text-left md:mr-[25%] "
+    
   },
    {
     id: 2,
@@ -28,8 +32,8 @@ const aboutData = [
     image: a2,
     imagePosition: "left",
     paragraph:"paragraphtwo",
-    imageClass:"w-[457px] h-[329.49px] left-0 top-[250px] ",
-    textclass:"text-left md:mr[25%]"
+    imageClass:"w-auto lg:w-[457px] h-[329.49px]  ",
+    textclass:"text-left md:ml-[25%]"
   },
    {
     id: 3,
@@ -38,8 +42,8 @@ const aboutData = [
     image: a3,
     imagePosition: "right",
     paragraph:"paragraphtwo",
-    imageClass:"w-[408px] h-[408px] right-0 top-[550px]",
-    textclass:"text-left md:ml[25%]"
+    imageClass:"w-auto lg:w-[408px] h-[308px] ",
+    textclass:"text-left md:mr-[25%]"
   },
    {
     id: 4,
@@ -48,18 +52,20 @@ const aboutData = [
     image: a4,
     imagePosition: "left",
     paragraph:"paragraphtwo",
-    imageClass:"w-[608px] h-[456px] left-0 top-[800px]",
-    textclass:"text-left md:mr[25%]"
+    imageClass:"w-auto lg:w-[608px] h-[356px] ",
+    textclass:"text-left md:ml-[25%]"
   }
 ];
   return (
-    <>
-          <Hero  image={i1} stylecss={"stylecss"} headcss="headone" headcontent={"NOW YOU CAN FEEL THE ENERGY WITH OUR DRINKS"} underline={ul1} paracss={"paraone"} linecss={"lineone"} lineimagecss={"lineimageone"} paracontent={"Our passion is serving the perfect cup, every time.Come in, take a seat, and let us craft your favorite drink.Welcome to your new favorite spot— where every sip is a story, and every visit feels like home."} />
-          {aboutData.map((item) => (
-             <Paragraph key={item.id} {...item} />
-          ))}
-           <img src={bp} alt="Background" />
-      
-    </>
+    <div className='relative  overflow-hidden  '>
+      <Hero  image={i1} stylecss={"stylecss"} headcss="headone" headcontent={"NOW YOU CAN FEEL THE ENERGY WITH OUR DRINKS"} underline={ul1} paracss={"paraone"} linecss={"lineone"} lineimagecss={"lineimageone"} paracontent={"Our passion is serving the perfect cup, every time.Come in, take a seat, and let us craft your favorite drink.Welcome to your new favorite spot— where every sip is a story, and every visit feels like home."} />
+      <img className='absolute z-0 top-[650px] -left-3  ' src={beanl} alt={beanl} />
+      <img className='absolute z-0 top-[1255px] left-9 -rotate-[30deg] ' src={tbean} alt={tbean} />
+      <img className='absolute z-0 top-[1230px] left-[1345px]  ' src={beanr} alt={beanr} />
+      {aboutData.map((item) => (<Paragraph key={item.id} {...item} />))}        
+      <img className='absolute z-0 top-[1600px] -left-[40px]  ' src={beanl} alt={beanl} />
+      <img className='absolute z-0 top-[1900px] right-0 -rotate-[100deg]' src={tbean} alt={tbean} />
+      <img className='lg:w-[702.7px] h-[557px]  absolute bottom-72 left-[450px]' src={bp} alt="Background" />          
+    </div>
   )
 }

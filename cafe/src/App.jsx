@@ -14,7 +14,7 @@ export default function App() {
 
   return (
     <BrowserRouter>
-    <About_page/>
+    {/* <About_page/> */}
       <Navbar />
       <Routes>
         <Route path="/" element={<Home_page />} />
@@ -28,4 +28,3 @@ export default function App() {
     </BrowserRouter>
   );
 }
-
