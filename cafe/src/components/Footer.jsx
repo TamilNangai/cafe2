@@ -6,7 +6,7 @@ import fb from '../assets/Footer/fb.png'
 export const Footer = () => {
   return (
     <div>
-      <footer className="w-full h-fit bg-cover  bg-center flex sm:justify-between justify-center z-1" style={{ backgroundImage: `url(${bg})` }}>
+      <footer className="w-full h-fit bg-cover  bg-center flex sm:justify-between justify-center z-10" style={{ backgroundImage: `url(${bg})` }}>
         <div className='xl:w-[20%] lg:w-[25%] md:w-[25%] w-[80%] h-fit flex flex-col  justify-items-center bg-white/70 rounded-[90px] sm:rounded-[120px] lg:m-14 md:m-8 lg:py-16 md:py-10 lg:px-5 md:px-2 p-5  my-5 '>
          <div className='w-full sm:w-auto h-fit justify-items-center'> <img className='w-auto xl:h-32 lg:h-24 md:h-20 h-[80px]' src={logo} alt="logo" /></div>
           <div className='w-full h-fit flex flex-col items-center gap-2  md:gap-4'>

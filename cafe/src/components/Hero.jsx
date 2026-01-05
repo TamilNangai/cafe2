@@ -1,7 +1,7 @@
 export const Hero= ({ image, stylecss, linecss, headcss, headcontent, underline, paracss, paracontent, lineimagecss }) => {
   return (
     <>
-    <div className={`w-full  bg-cover bg-center  relative text-white  h-[200px] sm:h-[200px] md:h-[418.64px] lg:h-[618.64px] xl:h-[738.64px] z-30 ${stylecss}`} style={{ backgroundImage: `url(${image})` }}>
+    <div className={`w-full  bg-cover bg-center  relative text-white  h-[200px] sm:h-[200px] md:h-[418.64px] lg:h-[618.64px] xl:h-[738.64px] z-30  ${stylecss}`} style={{ backgroundImage: `url(${image})` }}>
       <h1 className={`  absolute  text-[12px] sm:text-[17px] md:text-[26px] lg:text-[36px] xl:text-[40px] ${headcss}`}>{headcontent}</h1>
       <div className='flex justify-items-center'>
         <section className={`absolute ${linecss}`}><img className={` ${lineimagecss}`} src={underline} alt={underline} /></section>

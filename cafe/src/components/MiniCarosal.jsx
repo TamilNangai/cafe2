@@ -28,7 +28,7 @@ export const MiniCarosal = ({
   if (slides.length === 0) return null;
 
   return (
-    <div className="w-full h-[175.64px] sm:h-[200px] md:h-[418.64px] lg:h-[618.64px] xl:h-[738.64px] relative overflow-hidden">
+    <div className="w-full h-[175.64px] sm:h-[200px] md:h-[418.64px] lg:h-[618.64px] xl:w-[320px] xl:h-[420px] relative overflow-hidden mb-10">
       {slides.map((slide, index) => (
         <div
           key={index}
