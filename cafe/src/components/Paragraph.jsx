@@ -1,12 +1,12 @@
-export default function Paragraph({  title, description, image, imagePosition = "left", imageline, paragraph, imgtitle, imageClass, textclass, main, imgdiv, showImageName = false}) {
+export default function Paragraph({  title, description, image, imagePosition = "left", imageline, paragraph, imgtitle, imageClass, textclass, main, textcolor, imgdiv, showImageName = false}) {
   return (
     <div className={`flex flex-col md:flex-row relative items-center gap-3   ${main} ${imagePosition === "right" ? "md:flex-row-reverse " : ""}`}>
         <div className={` ${imgdiv} `}>
       {image && (<div className={`relative overflow-hidden rounded-xl ${showImageName ? "group" : "" }`}>  
       <img  src={image} alt={title} className={`  ${imageClass}  rounded-xl ${showImageName ? "transition-transform duration-500 group-hover:scale-105" : ""}`} />
       {showImageName && (
-        <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-          <span className="text-white text-[10px] font-['Great_Vibes'] drop-shadow-lg">{imgtitle}</span>
+        <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500  z-10">
+          <span className={`${textcolor} relative -bottom-24 text-[60px] alex-brush-regular drop-shadow-lg`}>{imgtitle}</span>
         </div>
       )}</div>
       )}

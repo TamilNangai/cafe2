@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Bellefair&family=Marmelad&family=Monofett&family=Salsa&family=Sedgwick+Ave+Display&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Alex+Brush&family=Bellefair&family=Marmelad&family=Monofett&family=Salsa&family=Sedgwick+Ave+Display&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -7,6 +6,11 @@
 
 .salsa-regular {
     font-family: "Salsa", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+.alex-brush-regular {
+    font-family: "Alex Brush", cursive;
     font-weight: 400;
     font-style: normal;
 }

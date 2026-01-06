@@ -25,8 +25,7 @@ function Home_page() {
   return (
     <div>
       <Carousal autoSlide={true} autoSlideInterval={3000} slides={slides}/>  
-      <Paragraph title="Relax and Unwind
-" description="Find your perfect spot to relax and unwind, whether you're catching up with friends, reading a book, or simply enjoying some quiet time with a great cup of coffee or tea.Our cozy ambiance and comfortable seating provide the perfect environment for you to recharge and enjoy the simple pleasures of life. " paragraph="paragraphone" main="p-5 py-10 px-10"/>
+      <Paragraph title="Relax and Unwind" description="Find your perfect spot to relax and unwind, whether you're catching up with friends, reading a book, or simply enjoying some quiet time with a great cup of coffee or tea.Our cozy ambiance and comfortable seating provide the perfect environment for you to recharge and enjoy the simple pleasures of life. " paragraph="paragraphone" main="p-5 py-10 px-10"/>
       <Marqueeslide />   
       <Paragraph title="About us" description="Welcome to Cafe Serenity, where passion for tea and coffee meets a cozy, welcoming atmosphere. Nestled in the heart of !our cafe is a haven for those who appreciate the art of a perfectly brewed cup and the joy of a warm, inviting space." paragraph="paragraphone" main="px-10"/>
       <Viewbtn to="/About_page" label="View" />
@@ -36,7 +35,7 @@ function Home_page() {
       <MiniCarosal slides={slidesr} autoSlide={true} autoSlideInterval={4000} />  
       </div>
       <Contactus />
-       <Viewbtn to="/About_page" label="View" />
+      <Viewbtn to="/Contact_page" label="View" />
     </div>
   )
 }
