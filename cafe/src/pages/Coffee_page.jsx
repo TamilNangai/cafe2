@@ -125,7 +125,7 @@ export default function Coffee_page() {
       <img class="absolute bottom-[930px] -left-10  z-40 " src={tbean} alt={tbean} />
       <img class="absolute bottom-[540px] right-[460px] z-40 -rotate-[30deg] " src={tbean} alt={tbean} />
       <img class="absolute bottom-[200px] -left-10  z-40 " src={beanl} alt={beanl} />
-      <img class="absolute -bottom-[132px] right-0 z-50" src={beanr} alt={beanr} />
+      <img class="absolute -bottom-[132px] right-0 z-40" src={beanr} alt={beanr} />
         
     </div>
   )

@@ -76,7 +76,7 @@
 /* paragraph */
 
 .paragraphone {
-   font-size: 15px;
+   font-size: 10px;
    text-align: center;
 }
 
@@ -88,13 +88,13 @@
 
 @media screen and (min-width: 768px) {
     .paragraphone {
-    font-size: 24px;
+    font-size: 20px;
     }
 }
 
 @media screen and (min-width: 1024px) {
     .paragraphone {
-    font-size: 26px;
+    font-size: 23px;
     }
 }
 
