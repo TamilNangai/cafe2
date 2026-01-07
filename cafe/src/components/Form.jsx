@@ -41,15 +41,15 @@ function Form() {
 
   return (
     <section 
-      className="w-full flex items-center justify-center rounded-2xl p-5 h-[570px] bg-[#835C3B] mt-20 mb-10 bg-cover bg-center" 
+      className=" flex items-center justify-center rounded-2xl md:p-5 w-auto md:h-[570px] bg-[#835C3B] mt-20 md:mb-10 bg-cover bg-center" 
       style={{ backgroundImage: `url(${bg})` }}
     >
-      <div className="w-1/2 p-10">
+      <div className="hidden md:block  md:w-1/2 md:p-10">
         <h1 className="text-[60px] text-white font-[Bellefair] leading-tight">Where Coffee Meets Comfort</h1>        
       </div>
 
-      <main className='flex justify-center items-center w-1/2'>
-        <div className="flex flex-col bg-white/20 backdrop-blur-lg rounded-3xl w-full max-w-md p-8">
+      <main className='flex justify-center items-center w-full md:w-1/2 p-10 md:p-0'>
+        <div className="w-full flex flex-col bg-white/20 backdrop-blur-lg rounded-3xl  md:max-w-md p-8">
           <form onSubmit={handleSubmit} className="flex flex-col space-y-4">
             <div className="flex space-x-4">
               <section className="text-left w-1/2">
