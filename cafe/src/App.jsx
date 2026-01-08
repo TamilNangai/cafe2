@@ -36,7 +36,7 @@ function App() {
           <Route path="/Coffee_page" element={<Coffee_page />} />
         </Routes>
       </AnimatePresence>
-      <Footer />
+      
     </>
   );
 }

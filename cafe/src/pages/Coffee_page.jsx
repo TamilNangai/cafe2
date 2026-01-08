@@ -13,6 +13,7 @@ import line from '../assets/Contact/line.png'
 import beanl from "../assets/coffee/beanl.png";
 import beanr from "../assets/coffee/beanr.png";
 import tbean from "../assets/coffee/tbean.png";
+import { Footer } from '../components/Footer'
 export default function Coffee_page() {
   const coffeeData = [
     {
@@ -22,9 +23,10 @@ export default function Coffee_page() {
       image: c1,
       imagePosition: "left",
       imgdiv:"md:w-3/12  absolute mb-5 ",
+      main:"max-sm:my-5",
       imageline:line,
       paragraph:"paragraphtwo",
-      imageClass:"md:w-auto  xl:h-[400px]  w-[160px] h-auto md:w-[250px] md:h-[400px] lg:w-[330px] lg:h-[500px] md:-left-8  lg:top-0   relative top-0 -left-5 z-40 ",
+      imageClass:"md:w-auto  xl:h-[400px]  w-[160px] h-auto md:w-[250px] md:h-[350px] lg:w-[330px] lg:h-[400px] md:left-0  lg:top-0  lg:left-7  relative top-0 -left-6 z-40 ",
       textclass:"text-left  ml-[35%]  md:ml-[28%] md:mt-10 md:mb-20 "
 
     },
@@ -35,7 +37,7 @@ export default function Coffee_page() {
       image: c2,
       imagePosition: "right",
       imgdiv:"md:w-3/12  w-4/12 justify-items-center",
-      main:"mb-5 lg:mx-[50px]",
+      main:"xl:mb-5 mb-10 lg:mx-[50px] ",
       paragraph:"paragraphtwo",
       imageClass:"w-auto  xl:h-[300px]  ",
       textclass:"text-left md:w-9/12 w-8/12",
@@ -49,7 +51,7 @@ export default function Coffee_page() {
       image: c3,
       imagePosition: "left",
       imgdiv:"md:w-3/12  w-4/12 justify-items-center",
-      main:"mb-5 lg:mx-[50px]",
+      main:"xl:mb-5 mb-10 lg:mx-[50px]",
       paragraph:"paragraphtwo",
       imageClass:"w-auto  xl:h-[300px] ",
       textclass:"text-left md:w-9/12 w-8/12",
@@ -63,7 +65,7 @@ export default function Coffee_page() {
       image: c4,
       imagePosition: "right",
       imgdiv:"md:w-3/12  w-4/12 justify-items-center",
-      main:"mb-5 lg:mx-[50px]",
+      main:"xl:mb-5 mb-10 lg:mx-[50px]",
       paragraph:"paragraphtwo",
       imageClass:"w-auto  xl:h-[300px] ",
       textclass:"text-left md:w-9/12 w-8/12",
@@ -77,7 +79,7 @@ export default function Coffee_page() {
       image: c5,
       imagePosition: "left",
       imgdiv:"md:w-3/12  w-4/12 justify-items-center",
-      main:"mb-5 lg:mx-[50px]",
+      main:"xl:mb-5 mb-10 lg:mx-[50px]",
       paragraph:"paragraphtwo",
       imageClass:"w-auto  xl:h-[300px] ",
       textclass:"text-left md:w-9/12 w-8/12",
@@ -91,7 +93,7 @@ export default function Coffee_page() {
       image: c6,
       imagePosition: "right",
       imgdiv:"md:w-3/12  w-4/12 justify-items-center",
-      main:"mb-5 lg:mx-[50px]",
+      main:"xl:mb-5 mb-10 lg:mx-[50px]",
       paragraph:"paragraphtwo",
       imageClass:"w-auto  xl:h-[300px] ",
       textclass:"text-left md:w-9/12 w-8/12",
@@ -105,9 +107,9 @@ export default function Coffee_page() {
       image: c7,
       imagePosition: "left",
       imgdiv:"md:w-3/12  w-4/12 justify-items-center",
-      main:" lg:mx-[50px] mb-0",
+      main:" lg:mx-[50px] xl:mb-0  md:mb-10 mb-8",
       paragraph:"paragraphtwo",
-      imageClass:"w-auto  xl:h-[300px] mb-10",
+      imageClass:"w-auto  xl:h-[300px] md:mb-10 ",
       textclass:"text-left md:w-9/12 w-8/12",
       showImageName: true,
       imgtitle: "Black Coffee",
@@ -115,19 +117,19 @@ export default function Coffee_page() {
     }
   ];
   return (
-     <div className='relative overflow-x-hidden'>
-      <img class="absolute z-40         h-auto w-20 sm:w-24 md:w-32 lg:w-40 xl:w-44       xl:top-[640px]  right-0      lg:top-[520px]  md:top-[920px]  top-[510px] " src={beanr} alt={beanr} />
-      <img class="absolute z-40          h-auto w-12 sm:w-12 md:w-20 lg:w-32 xl:w-44      xl:top-[1080px] right-1     lg:top-[940px] lg:-right-3  md:top-[880px]  top-[460px]  " src={tbean} alt={tbean} />
-      <img class="absolute z-0     h-auto w-12 sm:w-12 md:w-20 lg:w-32 xl:w-44            xl:top-[1435px] left-[380px]      lg:top-[1280px] lg:left-[290px]  md:top-[880px]  top-[460px]   " src={tbean} alt={tbean} />
-      <img class="absolute z-40          h-auto w-20 sm:w-24 md:w-32 lg:w-40 xl:w-44      xl:top-[1670px] right-0      lg:top-[1500px]  md:top-[920px]  top-[510px] " src={beanr} alt={beanr} />      
+     <div className='relative '>
+      <img className="absolute z-40         h-auto w-20 sm:w-24 md:w-32 lg:w-40 xl:w-44       xl:top-[640px]  right-0      lg:top-[520px]                         md:top-[340px]  top-[145px] " src={beanr} alt={beanr} />
+      <img className="absolute z-40          h-auto w-12 sm:w-12 md:w-20 lg:w-32 xl:w-44      xl:top-[1080px] xl:right-1     lg:top-[1000px] lg:right-5              md:top-[780px]  top-[450px] right-0 " src={tbean} alt={tbean} />
+      <img className="absolute z-0     h-auto w-12 sm:w-12 md:w-20 lg:w-32 xl:w-44            xl:top-[1435px] xl:left-[310px]      lg:top-[1230px] lg:left-[230px]   md:top-[990px] md:left-[170px] top-[620px]  left-[100px]  " src={tbean} alt={tbean} />
+      <img className="absolute z-40          h-auto w-20 sm:w-24 md:w-32 lg:w-40 xl:w-44      xl:top-[1670px] right-0      lg:top-[1370px]                        md:top-[1100px]  top-[710px] " src={beanr} alt={beanr} />      
       <Hero image={i2} stylecss={"stylecss"} headcss="headtwo" headcontent={"Welcome To Our flavour fusion"} underline={ul1} paracss={"paratwo"} linecss={"linetwo"} lineimagecss={"lineimageone"} paracontent={"Immerse yourself in the rich, bold flavors of freshly brewed coffee. Here, every cup is crafted with care, from the finest beans to the perfect pour. Whether you're a fan of robust espressos, smooth lattes, or a simple, satisfying black coffee, our menu has something to delight every coffee lover."} />
-      <div className=' mx-3 '>{coffeeData.map((item) => (<Paragraph key={item.id} {...item} />))}</div>      
-      <img class="absolute z-40          h-auto w-12 sm:w-12 md:w-20 lg:w-32 xl:w-44                      xl:bottom-[910px]  -left-12      lg:bottom-[950px] lg:-left-5  md:bottom-[80px] bottom-[40px]   " src={tbean} alt={tbean} />
-      <img class="absolute z-40 -rotate-[30deg]      h-auto w-12 sm:w-12 md:w-20 lg:w-32 xl:w-44          xl:bottom-[540px]  right-[460px]   lg:bottom-[560px]  lg:right-[325px] md:bottom-[80px]  bottom-[40px] " src={tbean} alt={tbean} />
-      <img class="absolute z-40      h-auto w-20 sm:w-24 md:w-32 lg:w-40 xl:w-44                          xl:bottom-[200px]  -left-10           lg:bottom-[220px] md:bottom-[180px]  bottom-[70px] " src={beanl} alt={beanl} />
-      <img class="absolute z-40         h-auto w-20 sm:w-24 md:w-32 lg:w-40 xl:w-44                       xl:-bottom-[132px]  right-0         lg:-bottom-[55px]  md:bottom-[90px]  bottom-[50px] " src={beanr} alt={beanr} />
-        
+      <div className='md:mx-10 max-sm:mx-5 '>{coffeeData.map((item) => (<Paragraph key={item.id} {...item} />))}</div>      
+      <img className="absolute z-40          h-auto w-12 sm:w-12 md:w-20 lg:w-32 xl:w-44                      xl:bottom-[1550px]  xl:-left-12      lg:bottom-[1220px] lg:-left-5               md:bottom-[1100px] md:-left-2  bottom-[800px]   " src={tbean} alt={tbean} />
+      <img className="absolute z-40 -rotate-[30deg]      h-auto w-12 sm:w-12 md:w-20 lg:w-32 xl:w-44          xl:bottom-[1190px]  xl:right-[360px]   lg:bottom-[960px]  lg:right-[250px]   md:bottom-[858px] md:right-[190px]  bottom-[590px] right-0" src={tbean} alt={tbean} />
+      <img className="absolute z-40      h-auto w-20 sm:w-24 md:w-32 lg:w-40 xl:w-44                          xl:bottom-[850px]  -left-10           lg:bottom-[670px] lg:-left-6           md:bottom-[580px]  bottom-[400px] " src={beanl} alt={beanl} />
+      <img className="absolute z-40         h-auto w-20 sm:w-24 md:w-32 lg:w-40 xl:w-44                       xl:bottom-[540px]  right-0         lg:bottom-[470px]                      md:bottom-[385px]  bottom-[260px] " src={beanr} alt={beanr} />
+       <Footer /> 
     </div>
   )
-}
+ }
 

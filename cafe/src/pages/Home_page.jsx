@@ -18,6 +18,7 @@ import Marqueeslide from '../components/Marqueeslide'
 import { Viewbtn } from '../components/Viewbtn'
 import { MiniCarosal } from '../components/MiniCarosal'
 import Paragraph from '../components/Paragraph'
+import { Footer } from '../components/Footer'
 const slides = [slide1, slide2,  slide3,  slide4];
 const slidesl = [h1, h2,  h3, h4, h5];
 const slidesr = [h6, h7,  h8, h9, h10];
@@ -36,6 +37,7 @@ function Home_page() {
       </div>
       <Contactus />
       <Viewbtn to="/Contact_page" label="View" />
+      <Footer />
     </div>
   )
 }

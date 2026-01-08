@@ -11,6 +11,7 @@ import line from '../assets/Contact/line.png'
 import beanl from "../assets/coffee/beanl.png";
 import beanr from "../assets/coffee/beanr.png";
 import tbean from "../assets/coffee/tbean.png";
+import { Footer } from '../components/Footer'
 export default function About_page() {
 
 const aboutData = [
@@ -71,12 +72,13 @@ const aboutData = [
     <div className='relative  overflow-hidden  '>
       <Hero  image={i1} stylecss={"stylecss"} headcss="headone" headcontent={"NOW YOU CAN FEEL THE ENERGY WITH OUR DRINKS"} underline={ul1} paracss={"paraone"} linecss={"lineone"} lineimagecss={"lineimageone"} paracontent={"Our passion is serving the perfect cup, every time.Come in, take a seat, and let us craft your favorite drink.Welcome to your new favorite spot— where every sip is a story, and every visit feels like home."} />
       <img className='absolute z-0 h-auto w-20 sm:w-24 md:w-32 lg:w-40 xl:w-44 xl:top-[650px] xl:-left-3   lg:top-[520px] lg:-left-3 md:top-[350px] md:-left-3 top-[150px] -left-3' src={beanl} alt={beanl} />
-      <img className='absolute z-0 h-auto w-12 sm:w-12 md:w-20 lg:w-32 xl:w-44 xl:top-[1335px] xl:left-0  lg:top-[1120px] lg:left-1 md:top-[880px] md:left-4 top-[460px] left-0 -rotate-[30deg] ' src={tbean} alt={tbean} />
-      <img className='absolute z-0 h-auto w-20 sm:w-24 md:w-32 lg:w-40 xl:w-44 xl:top-[1330px] xl:right-0 lg:top-[1150px] lg:right-0 md:top-[920px] md:right-0 top-[510px] right-0' src={beanr} alt={beanr} />
+      <img className='absolute z-0 h-auto w-12 sm:w-12 md:w-20 lg:w-32 xl:w-44 xl:top-[1335px] xl:left-0  lg:top-[1120px] lg:left-1 md:top-[880px] md:left-4 top-[440px] left-0 -rotate-[30deg] ' src={tbean} alt={tbean} />
+      <img className='absolute z-0 h-auto w-20 sm:w-24 md:w-32 lg:w-40 xl:w-44 xl:top-[1330px] xl:right-0 lg:top-[1150px] lg:right-0 md:top-[920px] md:right-0 top-[480px] right-0' src={beanr} alt={beanr} />
       <div className='lg:ms-[80px] lg:me-[30px] md:ms-[50px] md:me-[20px] ms-[20px] me-[5px]'>{aboutData.map((item) => (<Paragraph key={item.id} {...item} />))} </div>       
-      <img className='absolute z-0 h-auto w-20 sm:w-24 md:w-32 lg:w-40 xl:w-44 xl:top-[1670px] xl:-left-[40px] lg:top-[1420px] lg:-left-[40px] md:top-[1180px] md:-left-[50px] top-[750px] -left-[40px] ' src={beanl} alt={beanl} />
-      <img className='absolute z-0 h-auto w-12 sm:w-12 md:w-20 lg:w-32 xl:w-44 xl:top-[1920px] xl:right-0 lg:top-[1640px] lg:right-0 md:top-[1390px] md:right-0 top-[920px] right-0 -rotate-[100deg]' src={tbean} alt={tbean} />
-      <img className='xl:w-[702.7px] xl:h-[557px] lg:w-[602.7px] lg:h-[457px]  absolute xl:bottom-60 xl:left-[450px] lg:bottom-52 lg:left-[250px]' src={bp} alt="Background" />          
+      <img className='absolute z-0 h-auto w-20 sm:w-24 md:w-32 lg:w-40 xl:w-44 xl:top-[1670px] xl:-left-[40px] lg:top-[1420px] lg:-left-[40px] md:top-[1180px] md:-left-[50px] top-[700px] -left-[40px] ' src={beanl} alt={beanl} />
+      <img className='absolute z-0 h-auto w-12 sm:w-12 md:w-20 lg:w-32 xl:w-44 xl:top-[1920px] xl:right-0 lg:top-[1640px] lg:right-0 md:top-[1390px] md:right-0 top-[865px] right-0 -rotate-[100deg]' src={tbean} alt={tbean} />
+      <img className='xl:w-[702.7px] xl:h-[557px] lg:w-[602.7px] lg:h-[457px]  absolute xl:bottom-60 xl:left-[450px] lg:bottom-52 lg:left-[250px]' src={bp} alt="Background" />  
+      <Footer />        
     </div>
   )
 }
