@@ -62,7 +62,7 @@ const Contactus = () => {
                 <img className=" h-auto w-20 sm:w-24 md:w-32 lg:w-40 xl:w-48"  src={coffee_beanbl} alt="coffee_beanbl" />
             </div>
             
-            <div className='relative -bottom-16 md:-bottom-24  lg:bottom-0  left-0'>
+            <div className='relative -bottom-16 md:-bottom-24  lg:bottom-0 z-40  left-0'>
                 <img className='absolute  sm:bottom-0   sm:right-[120px] bottom-0  right-[60px]  z-50  h-auto w-8 sm:w-10 md:w-14 lg:w-14 xl:w-16 ' src={coffee} alt="coffee" />
                 <img className='absolute  sm:-bottom-10 sm:right-[70px]  -bottom-5  right-[35px] z-50  h-auto w-8 sm:w-10 md:w-14 lg:w-14 xl:w-16' src={coffee} alt="coffee" />
                 <img className='absolute  sm:-bottom-6  sm:right-[0px]   -bottom-3  right-[0px]  z-50  h-auto w-5 sm:w-8 md:w-8 lg:w-8 xl:w-10' src={coffee_beanh} alt="coffee_beanh" />
