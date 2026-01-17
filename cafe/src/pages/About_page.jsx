@@ -77,7 +77,7 @@ const aboutData = [
       <div className='lg:ms-[80px] lg:me-[30px] md:ms-[50px] md:me-[20px] ms-[20px] me-[5px]'>{aboutData.map((item) => (<Paragraph key={item.id} {...item} />))} </div>       
       <img className='absolute z-0 h-auto w-20 sm:w-24 md:w-32 lg:w-40 xl:w-44 xl:top-[1670px] xl:-left-[40px] lg:top-[1420px] lg:-left-[40px] md:top-[1180px] md:-left-[50px] top-[700px] -left-[40px] ' src={beanl} alt={beanl} />
       <img className='absolute z-0 h-auto w-12 sm:w-12 md:w-20 lg:w-32 xl:w-44 xl:top-[1920px] xl:right-0 lg:top-[1640px] lg:right-0 md:top-[1390px] md:right-0 top-[865px] right-0 -rotate-[100deg]' src={tbean} alt={tbean} />
-      <img className='xl:w-[702.7px] xl:h-[557px] lg:w-[602.7px] lg:h-[457px] md:w-[500.7px] md:h-[457px] w-[250.7px] h-[257px] absolute xl:bottom-[900px] xl:left-[450px] lg:bottom-[800px] lg:left-[250px] md:bottom-[650px] md:left-[180px] bottom-[550px] left-[8Z0px]' src={bp} alt="Background" />  
+      <img className='xl:w-[702.7px] xl:h-[557px] lg:w-[602.7px] lg:h-[457px] md:w-[500.7px] md:h-[457px] w-[250.7px] h-[257px] absolute xl:bottom-[900px] xl:left-[450px] lg:bottom-[800px] lg:left-[250px] md:bottom-[650px] md:left-[180px] bottom-[550px] left-[80px]' src={bp} alt="Background" />  
       <Footer />        
     </div>
   )
